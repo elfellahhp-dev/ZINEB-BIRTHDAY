@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,10 +135,10 @@ Happy birthday, sweetheart! 🥹🎀 I love you so much!
         <h1>Captured <span>Moments</span> 📸</h1>
         <p class="subtitle">Tap a memory to reveal</p>
         <div class="grid-2x2">
-            <img src="our-photo1.jpg" alt="Memory 1">
-            <img src="our-photo2.jpg" alt="Memory 2">
-            <img src="zineb1.jpg" alt="Zineb 1">
-            <img src="zineb2.jpg" alt="Zineb 2">
+            <img src="our-photo1.jpg.jpeg" onerror="this.src='our-photo1.jpg'" alt="Memory 1">
+            <img src="our-photo2.jpg.jpeg" onerror="this.src='our-photo2.jpg'" alt="Memory 2">
+            <img src="zineb1.jpeg" onerror="this.src='zineb1.jpg'" alt="Zineb 1">
+            <img src="zineb2.jpeg" onerror="this.src='zineb2.jpg'" alt="Zineb 2">
         </div>
         <button class="btn-pink" onclick="nextStep(6)">Hear our song 🎵</button>
     </div>
@@ -145,11 +146,10 @@ Happy birthday, sweetheart! 🥹🎀 I love you so much!
     <!-- STEP 6: Music Player -->
     <div class="step" id="step6">
         <div class="player-card">
-            <img src="our-photo2.jpg" class="player-img" alt="Our Cover">
+            <img src="our-photo2.jpg.jpeg" onerror="this.src='our-photo2.jpg'" class="player-img" alt="Our Cover">
             <h3>Special Song 💖</h3>
             <p style="font-size:12px; color:#ff80ab; margin-bottom:15px;">Dedicated to you</p>
             <audio id="audioPlayer" controls style="width:100%;">
-                <!-- Direct audio source -->
                 <source src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3" type="audio/mpeg">
             </audio>
         </div>
